@@ -14,8 +14,6 @@ The USB function is herited from the [STM32-USB-MIDI](https://github.com/Electri
 
 If you're using the Device Configuration Tool and want to keep the USB feature, you must **leave active** the **"USB_OTG_FS"** under "Connectivity" and the **"USB_DEVICE"** under "Middleware".
 
-Once the code is generated, you must **delete** the folders : **"Middlewares"** and **"USB_DEVICE"**.
-
-These are not needed since the whole USB interface is already in the "Core" folder.
+Once the code is generated, you must **delete** the folders : **"Middlewares"** and **"USB_DEVICE"**. They are not needed since the whole USB interface is already in the "Core" folder.
 
 You'll also need to **delete** the **" #include "usb_interface.h" "** at the beginning of "main.c" (line 22).
