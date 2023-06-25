@@ -1,0 +1,2527 @@
+Project: D8b-Hui-MCU5
+ Project MIDI IN ports:  E-DSP MIDI Port [1000], Bome's Midi Translator 1 Virtual In, Bome Virtual Port 1, Bome Virtual Port 5
+ Project MIDI OUT ports:  Bome's Midi Translator 1 Virtual Out, Bome Virtual Port 1, E-DSP MIDI Port [1000], Bome Virtual Port 5
+_____________________________________________________________
+Preset 0: HUI to MCU
+ Default MIDI IN ports:  E-DSP MIDI Port [1000]
+ Default MIDI OUT ports:  Bome Virtual Port 1
+
+Translator 0.0: LvlToTape/Name-ValuePsh
+Options: stop=false
+Incoming: MIDI B0 0F 0C B0 2F 44
+Outgoing: MIDI 90 34 7F
+
+Translator 0.1: LvlToTape/Name-ValueRls
+Options: stop=false
+Incoming: MIDI B0 0F 0C B0 2F 04
+Outgoing: MIDI 90 34 00
+
+Translator 0.2: DigitalTrim/SmptePsh
+Options: stop=false
+Incoming: MIDI B0 0F 0C B0 2F 43
+Outgoing: MIDI 90 35 7F
+
+Translator 0.3: DigitalTrim/SmpteRelse
+Options: stop=false
+Incoming: MIDI B0 0F 0C B0 2F 03
+Outgoing: MIDI 90 35 00
+
+Translator 0.4: Aux 1 /TrsckPush
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 47
+Outgoing: MIDI 90 28 7F
+
+Translator 0.5: Aux 1 /TrackRelease
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 07
+Outgoing: MIDI 90 28 00
+
+Translator 0.6: Aux 2/SendPush
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 46
+Outgoing: MIDI 90 29 7F
+
+Translator 0.7: Aux 2/SendRelease
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 06
+Outgoing: MIDI 90 29 00
+
+Translator 0.8: Aux 3/ PanSurroundPush
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 45
+Outgoing: MIDI 90 2A 7F
+
+Translator 0.9: Aux 3/ PanSurround Release
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 05
+Outgoing: MIDI 90 2A 00
+
+Translator 0.10: Aux 4/PlugInPush
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 44
+Outgoing: MIDI 90 2B 7F
+
+Translator 0.11: Aux 4/ PluginRelease
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 04
+Outgoing: MIDI 90 2B 00
+
+Translator 0.12: Aux 5/EQ Push
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 43
+Outgoing: MIDI 90 2C 7F
+
+Translator 0.13: Aux 5/EQ Release
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 03
+Outgoing: MIDI 90 2C 00
+
+Translator 0.14: Aux 7/ Inst Push
+Options: stop=false
+Incoming: MIDI B0 0F 0C B0 2F 46
+Outgoing: MIDI 90 2D 7F
+
+Translator 0.15: Aux 7/ Inst Release
+Options: stop=false
+Incoming: MIDI B0 0F 0F B0 2F 06
+Outgoing: MIDI 90 2D 00
+
+Translator 0.16: PanBelowV/FlipPush
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 42
+Outgoing: MIDI 90 32 7F
+
+Translator 0.17: PanBelowV/FlipRelease
+Options: stop=false
+Incoming: MIDI B0 0F 0B B0 2F 02
+Outgoing: MIDI 90 32 00
+
+Translator 0.18: Bus2/Glbl Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 44
+Outgoing: MIDI 90 33 7F
+
+Translator 0.19: Bus2/Glbl Released
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 04
+Outgoing: MIDI 90 33 00
+
+Translator 0.20: Bus3 / Save Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 40
+Outgoing: MIDI 90 50 7F
+
+Translator 0.21: Bus3 / Save Released
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 00
+Outgoing: MIDI 90 50 00
+
+Translator 0.22: Bus7/Shift Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 41
+Outgoing: MIDI 90 46 7F
+
+Translator 0.23: Bus7/Shift Released
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 01
+Outgoing: MIDI 90 46 00
+
+Translator 0.24: Bus8/Option Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 44
+Outgoing: MIDI 90 47 7F
+
+Translator 0.25: Bus8/Option Released
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 04
+Outgoing: MIDI 90 47 00
+
+Translator 0.26: Bus RtToTape/ ALT Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 08 B0 2F 47
+Outgoing: MIDI 90 49 7F
+
+Translator 0.27: Bus RtToTape/ ALTRelase
+Options: stop=false
+Incoming: MIDI B0 0F 08 B0 2F 07
+Outgoing: MIDI 90 49 00
+
+Translator 0.28: Bus LnR/ Control Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 08 B0 2F 41
+Outgoing: MIDI 90 48 7F
+
+Translator 0.29: Bus LnR/ Control Released
+Options: stop=false
+Incoming: MIDI B0 0F 08 B0 2F 01
+Outgoing: MIDI 90 48 00
+
+Translator 0.30: Strip1 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 44
+Outgoing: MIDI 90 20 7F
+
+Translator 0.31: Strip1 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 04
+Outgoing: MIDI 90 20 00
+
+Translator 0.32: Strip2 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 44
+Outgoing: MIDI 90 21 7F
+
+Translator 0.33: Strip2 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 04
+Outgoing: MIDI 90 21 00
+
+Translator 0.34: Strip3 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 44
+Outgoing: MIDI 90 22 7F
+
+Translator 0.35: Strip3 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 04
+Outgoing: MIDI 90 22 00
+
+Translator 0.36: Strip4 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 44
+Outgoing: MIDI 90 23 7F
+
+Translator 0.37: Strip4 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 04
+Outgoing: MIDI 90 23 00
+
+Translator 0.38: Strip5 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 44
+Outgoing: MIDI 90 24 7F
+
+Translator 0.39: Strip5 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 04
+Outgoing: MIDI 90 24 00
+
+Translator 0.40: Strip6 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 44
+Outgoing: MIDI 90 25 7F
+
+Translator 0.41: Strip6 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 44
+Outgoing: MIDI 90 25 7F
+
+Translator 0.42: Strip7 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 44
+Outgoing: MIDI 90 26 7F
+
+Translator 0.43: Strip7 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 04
+Outgoing: MIDI 90 26 00
+
+Translator 0.44: Strip8 Write/VpotSwitch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 44
+Outgoing: MIDI 90 27 7F
+
+Translator 0.45: Strip8 Write/VpotSwitch Released
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 04
+Outgoing: MIDI 90 27 00
+
+Translator 0.46: Strip1 Assign/ F1 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 45
+Outgoing: MIDI 90 36 7F
+
+Translator 0.47: Strip1 Assign/ F1 Released
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 05
+Outgoing: MIDI 90 36 00
+
+Translator 0.48: Strip2 Assign/ F2 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 45
+Outgoing: MIDI 90 37 7F
+
+Translator 0.49: Strip2 Assign/ F2 Released
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 05
+Outgoing: MIDI 90 37 00
+
+Translator 0.50: Strip3 Assign/ F3 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 45
+Outgoing: MIDI 90 38 7F
+
+Translator 0.51: Strip3 Assign/ F3 Released
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 05
+Outgoing: MIDI 90 38 00
+
+Translator 0.52: Strip4 Assign/ F4 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 45
+Outgoing: MIDI 90 39 7F
+
+Translator 0.53: Strip4 Assign/ F4 Released
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 05
+Outgoing: MIDI 90 39 00
+
+Translator 0.54: Strip5 Assign/ F5 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 45
+Outgoing: MIDI 90 3A 7F
+
+Translator 0.55: Strip5 Assign/ F5 Released
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 05
+Outgoing: MIDI 90 3A 00
+
+Translator 0.56: Strip6 Assign/ F6 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 45
+Outgoing: MIDI 90 3B 7F
+
+Translator 0.57: Strip6 Assign/ F6 Released
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 05
+Outgoing: MIDI 90 3B 00
+
+Translator 0.58: Strip7 Assign/ F7 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 45
+Outgoing: MIDI 90 3C 7F
+
+Translator 0.59: Strip7 Assign/ F7 Released
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 05
+Outgoing: MIDI 90 3C 00
+
+Translator 0.60: Strip8 Assign/ F8 Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 45
+Outgoing: MIDI 90 3D 7F
+
+Translator 0.61: Strip8 Assign/ F8 Released
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 05
+Outgoing: MIDI 90 3D 00
+
+Translator 0.62: FC On/ Gl Midi Push
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 42
+Outgoing: MIDI 90 3E 7F
+
+Translator 0.63: FC On/ Gl Midi Release
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 02
+Outgoing: MIDI 90 3E 00
+
+Translator 0.64: FC SetUp /Inputs Push
+Options: stop=false
+Incoming: MIDI B0 0F 1C B0 2F 47
+Outgoing: MIDI 90 3F 7F
+
+Translator 0.65: FC SetUp /InputsRelease
+Options: stop=false
+Incoming: MIDI B0 0F 1C B0 2F 07
+Outgoing: MIDI 90 3F 00
+
+Translator 0.66: FCMemoryA/AudioTrksPush
+Options: stop=false
+Incoming: MIDI B0 0F 1C B0 2F 46
+Outgoing: MIDI 90 40 7F
+
+Translator 0.67: FCMemoryA/AudioTrksRelease
+Options: stop=false
+Incoming: MIDI B0 0F 1C B0 2F 06
+Outgoing: MIDI 90 40 00
+
+Translator 0.68: FCMemoryB/AudioInstPush
+Options: stop=false
+Incoming: MIDI B0 0F 1C B0 2F 40
+Outgoing: MIDI 90 41 7F
+
+Translator 0.69: FCMemoryB/AudioInstRelease
+Options: stop=false
+Incoming: MIDI B0 0F 1C B0 2F 00
+Outgoing: MIDI 90 41 00
+
+Translator 0.70: FCGate/GlblAuxPush
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 45
+Outgoing: MIDI 90 42 7F
+
+Translator 0.71: FCGate/GlblAuxRelease
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 05
+Outgoing: MIDI 90 42 00
+
+Translator 0.72: FCComprss/GlblBussesPush
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 41
+Outgoing: MIDI 90 43 7F
+
+Translator 0.73: FCComprss/GlblBussesRelease
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 01
+Outgoing: MIDI 90 43 00
+
+Translator 0.74: FCPlugIns/GlblOutputsPush
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 44
+Outgoing: MIDI 90 44 7F
+
+Translator 0.75: FCPlugIns/GlblOutputsRelease
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 04
+Outgoing: MIDI 90 44 00
+
+Translator 0.76: FCLoadPatch/GlblUserPush
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 40
+Outgoing: MIDI 90 45 7F
+
+Translator 0.77: FCLoadPatch/GlblUserRelease
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 00
+Outgoing: MIDI 90 45 00
+
+Translator 0.78: Auto Bypass/Read/OffPrsd
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 43
+Outgoing: MIDI 90 4A 7F
+
+Translator 0.79: Auto Bypass/Read/OffPReleased
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 03
+Outgoing: MIDI 90 4A 00
+
+Translator 0.80: AutoFaders / WritePushed
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 42
+Outgoing: MIDI 90 4B 7F
+
+Translator 0.81: AutoFaders / WriteReleased
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 02
+Outgoing: MIDI 90 4B 00
+
+Translator 0.82: Auto Mute / Trim Pushed
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 45
+Outgoing: MIDI 90 4C 7F
+
+Translator 0.83: Auto Mute / Trim Released
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 05
+Outgoing: MIDI 90 4C 00
+
+Translator 0.84: Auto Touch/Touch Pushed
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 45
+Outgoing: MIDI 90 4D 7F
+
+Translator 0.85: Auto Touch/Touch Released
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 05
+Outgoing: MIDI 90 4D 00
+
+Translator 0.86: AutoPan/Latch Pushed
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 41
+Outgoing: MIDI 90 4E 7F
+
+Translator 0.87: AutoPan/Latch Released
+Options: stop=false
+Incoming: MIDI B0 0F 17 B0 2F 01
+Outgoing: MIDI 90 4E 00
+
+Translator 0.88: AutoTrim / Group Push
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 40
+Outgoing: MIDI 90 4F 7F
+
+Translator 0.89: AutoTrim / Group Released
+Options: stop=false
+Incoming: MIDI B0 0F 18 B0 2F 00
+Outgoing: MIDI 90 4F 00
+
+Translator 0.90: Bank DownPush
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 41
+Outgoing: MIDI 90 2E 7F
+
+Translator 0.91: Bank DownRelease
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 01
+Outgoing: MIDI 90 2E 00
+
+Translator 0.92: Bank up Push
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 43
+Outgoing: MIDI 90 2F 7F
+
+Translator 0.93: Bank up Release
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 03
+Outgoing: MIDI 90 2F 00
+
+Translator 0.94: Channel Up Push
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 42
+Outgoing: MIDI 90 31 7F
+
+Translator 0.95: Channel Up Release
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 02
+Outgoing: MIDI 90 31 00
+
+Translator 0.96: Channel Down Push
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 40
+Outgoing: MIDI 90 30 7F
+
+Translator 0.97: Channel Down Release
+Options: stop=false
+Incoming: MIDI B0 0F 0A B0 2F 00
+Outgoing: MIDI 90 30 00
+
+Translator 0.98: Fader 1 Touch
+Options: disabled, stop=false
+Incoming: MIDI B0 0F 01 B0 01 00
+Outgoing: MIDI 90 68 7F
+
+Translator 0.99: Fader 1 Move
+Options: stop=false
+Incoming: MIDI B0 00 pp B0 20 qq
+Outgoing: MIDI E0 qq pp
+
+Translator 0.100: Fader 1 Release
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 00
+Outgoing: MIDI 90 68 00
+
+Translator 0.101: Fader 2 Move
+Options: stop=false
+Incoming: MIDI B0 01 pp B0 21 qq
+Outgoing: MIDI E1 qq pp
+
+Translator 0.102: Fader 3 Move
+Options: stop=false
+Incoming: MIDI B0 02 pp B0 22 qq
+Outgoing: MIDI E2 qq pp
+
+Translator 0.103: Fader 4 Move
+Options: stop=false
+Incoming: MIDI B0 03 pp B0 23 qq
+Outgoing: MIDI E3 qq pp
+
+Translator 0.104: Fader 5 Move
+Options: stop=false
+Incoming: MIDI B0 04 pp B0 24 qq
+Outgoing: MIDI E4 qq pp
+
+Translator 0.105: Fader 6 Move
+Options: stop=false
+Incoming: MIDI B0 05 pp B0 25 qq
+Outgoing: MIDI E5 qq pp
+
+Translator 0.106: Fader 7 Move
+Options: stop=false
+Incoming: MIDI B0 06 pp B0 26 qq
+Outgoing: MIDI E6 qq pp
+
+Translator 0.107: Fader 8 Move
+Options: stop=false
+Incoming: MIDI B0 07 pp B0 27 qq
+Outgoing: MIDI E7 qq pp
+
+Translator 0.108: Ch 1Meter
+Options: disabled, stop=false
+Incoming: MIDI B0 2F 42
+Outgoing: MIDI B0 10 vv
+
+Translator 0.109: Ch 1 Vpot
+Options: stop=false
+Incoming: MIDI B0 40 pp
+Rules: 
+  if pp<64 then Goto "Down"
+  if pp>64 then Goto "Up"
+  Label "Up"
+  pp=pp-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  pp=pp+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 10 pp
+
+Translator 0.110: Ch 2 Vpot
+Options: stop=false
+Incoming: MIDI B0 41 vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=vv-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=vv+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 11 vv
+
+Translator 0.111: Ch 3 Vpot
+Options: stop=false
+Incoming: MIDI B0 42 vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=vv-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=vv+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 12 vv
+
+Translator 0.112: Ch 4 Vpot
+Options: stop=false
+Incoming: MIDI B0 43 vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=vv-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=vv+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 13 vv
+
+Translator 0.113: Ch 5 Vpot
+Options: stop=false
+Incoming: MIDI B0 44 vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=vv-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=vv+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 14 vv
+
+Translator 0.114: Ch 6 Vpot
+Options: stop=false
+Incoming: MIDI B0 45 vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=vv-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=vv+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 15 vv
+
+Translator 0.115: Ch 7 Vpot
+Options: stop=false
+Incoming: MIDI B0 46 vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=vv-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=vv+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 16 vv
+
+Translator 0.116: Ch 8 Vpot
+Options: stop=false
+Incoming: MIDI B0 47 vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=vv-64
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=vv+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 17 vv
+
+Translator 0.117: Ch 1 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 47
+Outgoing: MIDI 90 00 7F
+
+Translator 0.118: Ch 1 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 07
+Outgoing: MIDI 90 00 00
+
+Translator 0.119: Ch 1 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 41
+Outgoing: MIDI 90 18 7F
+
+Translator 0.120: Ch 1 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 01
+Outgoing: MIDI 90 18 00
+
+Translator 0.121: Ch 1 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 43
+Outgoing: MIDI 90 08 7F
+
+Translator 0.122: Ch 1 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 03
+Outgoing: MIDI 90 08 00
+
+Translator 0.123: Ch 1 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 42
+Outgoing: MIDI 90 10 7F
+
+Translator 0.124: Ch 1 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 00 B0 2F 02
+Outgoing: MIDI 90 10 00
+
+Translator 0.125: Ch 2 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 47
+Outgoing: MIDI 90 01 7F
+
+Translator 0.126: Ch 2 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 07
+Outgoing: MIDI 90 01 00
+
+Translator 0.127: Ch 2 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 41
+Outgoing: MIDI 90 19 7F
+
+Translator 0.128: Ch 2 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 01
+Outgoing: MIDI 90 19 00
+
+Translator 0.129: Ch 2 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 43
+Outgoing: MIDI 90 09 7F
+
+Translator 0.130: Ch 2 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 03
+Outgoing: MIDI 90 09 00
+
+Translator 0.131: Ch 2 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 42
+Outgoing: MIDI 90 11 7F
+
+Translator 0.132: Ch 2 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 01 B0 2F 02
+Outgoing: MIDI 90 11 00
+
+Translator 0.133: Ch 3 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 47
+Outgoing: MIDI 90 02 7F
+
+Translator 0.134: Ch 3 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 07
+Outgoing: MIDI 90 02 00
+
+Translator 0.135: Ch 3 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 41
+Outgoing: MIDI 90 1A 7F
+
+Translator 0.136: Ch 3 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 01
+Outgoing: MIDI 90 1A 00
+
+Translator 0.137: Ch 3 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 43
+Outgoing: MIDI 90 0A 7F
+
+Translator 0.138: Ch 3 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 03
+Outgoing: MIDI 90 0A 00
+
+Translator 0.139: Ch 3 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 42
+Outgoing: MIDI 90 12 7F
+
+Translator 0.140: Ch 3 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 02 B0 2F 02
+Outgoing: MIDI 90 12 00
+
+Translator 0.141: Ch 4 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 47
+Outgoing: MIDI 90 03 7F
+
+Translator 0.142: Ch 4 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 07
+Outgoing: MIDI 90 03 00
+
+Translator 0.143: Ch 4 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 41
+Outgoing: MIDI 90 1B 7F
+
+Translator 0.144: Ch 4 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 01
+Outgoing: MIDI 90 1B 00
+
+Translator 0.145: Ch 4 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 43
+Outgoing: MIDI 90 0B 7F
+
+Translator 0.146: Ch 4 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 03
+Outgoing: MIDI 90 0B 00
+
+Translator 0.147: Ch 4 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 42
+Outgoing: MIDI 90 13 7F
+
+Translator 0.148: Ch 4 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 03 B0 2F 02
+Outgoing: MIDI 90 13 00
+
+Translator 0.149: Ch 5 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 47
+Outgoing: MIDI 90 04 7F
+
+Translator 0.150: Ch 5 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 07
+Outgoing: MIDI 90 04 00
+
+Translator 0.151: Ch 5 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 41
+Outgoing: MIDI 90 1C 7F
+
+Translator 0.152: Ch 5 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 01
+Outgoing: MIDI 90 1C 00
+
+Translator 0.153: Ch 5 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 43
+Outgoing: MIDI 90 0C 7F
+
+Translator 0.154: Ch 5 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 03
+Outgoing: MIDI 90 0C 00
+
+Translator 0.155: Ch 5 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 42
+Outgoing: MIDI 90 14 7F
+
+Translator 0.156: Ch 5 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 04 B0 2F 02
+Outgoing: MIDI 90 14 00
+
+Translator 0.157: Ch 6 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 47
+Outgoing: MIDI 90 05 7F
+
+Translator 0.158: Ch 6 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 07
+Outgoing: MIDI 90 05 00
+
+Translator 0.159: Ch 6 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 43
+Outgoing: MIDI 90 0D 7F
+
+Translator 0.160: Ch 6 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 41
+Outgoing: MIDI 90 1D 7F
+
+Translator 0.161: Ch 6 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 01
+Outgoing: MIDI 90 1D 00
+
+Translator 0.162: Ch 6 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 03
+Outgoing: MIDI 90 0D 00
+
+Translator 0.163: Ch 6 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 42
+Outgoing: MIDI 90 15 7F
+
+Translator 0.164: Ch 6 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 05 B0 2F 02
+Outgoing: MIDI 90 15 00
+
+Translator 0.165: Ch 7 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 47
+Outgoing: MIDI 90 06 7F
+
+Translator 0.166: Ch 7 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 07
+Outgoing: MIDI 90 06 00
+
+Translator 0.167: Ch 7 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 41
+Outgoing: MIDI 90 1E 7F
+
+Translator 0.168: Ch 7 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 01
+Outgoing: MIDI 90 1E 00
+
+Translator 0.169: Ch 6 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 43
+Outgoing: MIDI 90 0E 7F
+
+Translator 0.170: Ch 7 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 03
+Outgoing: MIDI 90 0E 00
+
+Translator 0.171: Ch 7 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 42
+Outgoing: MIDI 90 16 7F
+
+Translator 0.172: Ch 7 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 06 B0 2F 02
+Outgoing: MIDI 90 16 00
+
+Translator 0.173: Ch 8 Rec/Ready Push
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 47
+Outgoing: MIDI 90 07 7F
+
+Translator 0.174: Ch 8 Rec/Ready Release
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 07
+Outgoing: MIDI 90 07 00
+
+Translator 0.175: Ch 8 SoloPush
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 43
+Outgoing: MIDI 90 0F 7F
+
+Translator 0.176: Ch 8 Select Push
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 41
+Outgoing: MIDI 90 1F 7F
+
+Translator 0.177: Ch 8 Select Release
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 01
+Outgoing: MIDI 90 1F 00
+
+Translator 0.178: Ch 8 Solo Release
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 03
+Outgoing: MIDI 90 0F 00
+
+Translator 0.179: Ch 8 Mute Push
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 42
+Outgoing: MIDI 90 17 7F
+
+Translator 0.180: Ch 8 Mute Release
+Options: stop=false
+Incoming: MIDI B0 0F 07 B0 2F 02
+Outgoing: MIDI 90 17 00
+
+Translator 0.181: Num 1/ Zoom Push
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 41
+Outgoing: MIDI 90 64 7F
+
+Translator 0.182: Num 1/ Zoom Release
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 01
+Outgoing: MIDI 90 64 00
+
+Translator 0.183: Num 2/ Up Push
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 43
+Outgoing: MIDI 90 60 7F
+
+Translator 0.184: Num 2/ Up Release
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 03
+Outgoing: MIDI 90 60 00
+
+Translator 0.185: Num 6/ Left Push
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 47
+Outgoing: MIDI 90 62 7F
+
+Translator 0.186: Num 6/ Left Release
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 07
+Outgoing: MIDI 90 62 00
+
+Translator 0.187: Num 7/ Down Push
+Options: stop=false
+Incoming: MIDI B0 0F 15 B0 2F 40
+Outgoing: MIDI 90 61 7F
+
+Translator 0.188: Num 7/ Down Release
+Options: stop=false
+Incoming: MIDI B0 0F 15 B0 2F 00
+Outgoing: MIDI 90 61 00
+
+Translator 0.189: Num 8/ Right Push
+Options: stop=false
+Incoming: MIDI B0 0F 15 B0 2F 41
+Outgoing: MIDI 90 63 7F
+
+Translator 0.190: Num 8/ Right release
+Options: stop=false
+Incoming: MIDI B0 0F 15 B0 2F 01
+Outgoing: MIDI 90 63 00
+
+Translator 0.191: Num 9/ Drop Push
+Options: stop=false
+Incoming: MIDI B0 0F 15 B0 2F 42
+Outgoing: MIDI 90 57 7F
+
+Translator 0.192: Num 9/ Drop Release
+Options: stop=false
+Incoming: MIDI B0 0F 15 B0 2F 02
+Outgoing: MIDI 90 57 00
+
+Translator 0.193: Num 0/ ReplacePush
+Options: disabled, stop=false
+Incoming: MIDI B0 0F 13 B0 2F 40
+Outgoing: MIDI 90 58 7F
+
+Translator 0.194: Num 0/ Replace Release
+Options: disabled, stop=false
+Incoming: MIDI B0 0F 13 B0 2F 00
+Outgoing: MIDI 90 58 00
+
+Translator 0.195: Num 4/Tab
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 42
+Outgoing: Keystroke: Tab 
+
+Translator 0.196: Num 5/Up Arrow
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 44
+Outgoing: Keystroke: Up 
+
+Translator 0.197: Num 0/Down Arrow
+Options: stop=false
+Incoming: MIDI B0 0F 13 B0 2F 40
+Outgoing: Keystroke: Down 
+
+Translator 0.198: Cut / Click Push
+Options: stop=false
+Incoming: MIDI B0 0F 1A B0 2F 41
+Outgoing: MIDI 90 59 7F
+
+Translator 0.199: Cut / Click Release
+Options: stop=false
+Incoming: MIDI B0 2F 01
+Outgoing: MIDI 90 59 00
+
+Translator 0.200: Paste / MSolo Push
+Options: stop=false
+Incoming: MIDI B0 0F 1A B0 2F 40
+Outgoing: MIDI 90 5A 7F
+
+Translator 0.201: Paste / MSolo Release
+Options: stop=false
+Incoming: MIDI B0 0F 1A B0 2F 00
+Outgoing: MIDI 90 5A 00
+
+Translator 0.202: Copy / Marker Push
+Options: stop=false
+Incoming: MIDI B0 0F 1A B0 2F 44
+Outgoing: MIDI 90 54 7F
+
+Translator 0.203: Copy / Marker Release
+Options: stop=false
+Incoming: MIDI B0 0F 1A B0 2F 04
+Outgoing: MIDI 90 54 00
+
+Translator 0.204: Smpte / Nudge Push
+Options: stop=false
+Incoming: MIDI B0 0F 1B B0 2F 47
+Outgoing: MIDI 90 55 7F
+
+Translator 0.205: Smpte / Nudge Release
+Options: stop=false
+Incoming: MIDI B0 0F 1B B0 2F 07
+Outgoing: MIDI 90 55 00
+
+Translator 0.206: Undo Push
+Options: stop=false
+Incoming: MIDI B0 0F 08 B0 2F 43
+Outgoing: MIDI 90 51 7F
+
+Translator 0.207: Undo Release
+Options: stop=false
+Incoming: MIDI B0 0F 08 B0 2F 03
+Outgoing: MIDI 90 51 00
+
+Translator 0.208: Enter Push
+Options: stop=false
+Incoming: MIDI B0 0F 14 B0 2F 40
+Outgoing: Keystroke: Return 
+
+Translator 0.209: Enter Push
+Options: disabled, stop=false
+Incoming: MIDI B0 0F 14 B0 2F 40
+Outgoing: MIDI 90 53 7F
+
+Translator 0.210: Enter Released
+Options: disabled, stop=false
+Incoming: MIDI B0 0F 14 B0 2F 00
+Outgoing: MIDI 90 53 00
+
+Translator 0.211: Loop / Cycle Push
+Options: stop=false
+Incoming: MIDI B0 0F 0F B0 2F 43
+Outgoing: MIDI 90 56 7F
+
+Translator 0.212: Loop / Cycle Release
+Options: stop=false
+Incoming: MIDI B0 0F 0F B0 2F 03
+Outgoing: MIDI 90 56 00
+
+Translator 0.213: Jog wheel
+Options: stop=false
+Incoming: MIDI B0 0D vv
+Rules: 
+  if vv<64 then Goto "Down"
+  if vv>64 then Goto "Up"
+  Label "Up"
+  vv=1
+  exit rules, execute Outgoing Action
+  Label "Down"
+  vv=65
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 3C vv
+
+Translator 0.214: Scrub Push
+Options: stop=false
+Incoming: MIDI B0 0F 0D B0 2F 45 B0 0F 0D B0 2F 05
+Outgoing: MIDI 90 65 7F
+
+Translator 0.215: Rew Push
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 41
+Outgoing: MIDI 90 5B 7F
+
+Translator 0.216: Rew Release
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 01
+Outgoing: MIDI 90 5B 00
+
+Translator 0.217: FF Push
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 42
+Outgoing: MIDI 90 5C 7F
+
+Translator 0.218: FF Release
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 02
+Outgoing: MIDI 90 5C 00
+
+Translator 0.219: Stop Push
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 43
+Outgoing: MIDI 90 5D 7F
+
+Translator 0.220: Stop Release
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 03
+Outgoing: MIDI 90 5D 00
+
+Translator 0.221: Play Push
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 44
+Outgoing: MIDI 90 5E 7F
+
+Translator 0.222: Play Release
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 04
+Outgoing: MIDI 90 5E 00
+
+Translator 0.223: RecordPush
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 45
+Outgoing: MIDI 90 5F 7F
+
+Translator 0.224: Record Release
+Options: stop=false
+Incoming: MIDI B0 0F 0E B0 2F 05
+Outgoing: MIDI 90 5F 00
+
+Translator 0.225: Ping
+Options: disabled, stop=false
+Incoming: MIDI 90 00 7F
+Outgoing: (none)
+_____________________________________________________________
+Preset 1: MCU to HUI
+ Default MIDI IN ports:  Bome Virtual Port 1
+ Default MIDI OUT ports:  E-DSP MIDI Port [1000]
+
+Translator 1.0: New Translator
+Options: disabled, stop=false
+Incoming: MIDI F0 00 00 66 14 12 pp qq rr ss tt uu vv xx F7
+Outgoing: MIDI F0 00 00 66 05 00 10 00 41 75 64 32 01 41 75 64 33 02 F7
+
+Translator 1.1: Display
+Options: disabled, stop=false
+Incoming: MIDI F0 00 00 66 14 12 00 pp qq rr ss rr uu vv F7
+Outgoing: MIDI F0 00 00 66 05 00 10 00 pp qq rr ss F7
+
+Translator 1.2: Display
+Options: disabled, stop=false
+Incoming: MIDI F0 00 00 66 14 12 00 pp qq rr ss rr uu vv F7
+Outgoing: MIDI F0 00 00 66 05 00 12 00 pp qq rr ss tt uu vv F7
+
+Translator 1.3: Send a lite
+Options: disabled, stop=false
+Incoming: MIDI 90 17 00
+Outgoing: MIDI F0 00 00 66 05 00 12 00 20 20 20 20 20 20 20 20 20 20 F7
+
+Translator 1.4: Send a lite
+Options: disabled, stop=false
+Incoming: MIDI 90 17 00
+Outgoing: MIDI A0 03 00
+
+Translator 1.5: Rude Solo Light On
+Options: stop=false
+Incoming: MIDI 90 73 7F
+Outgoing: MIDI B0 0C 16 B0 2c 43
+
+Translator 1.6: Rude Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 73 00
+Outgoing: MIDI B0 0C 16 B0 2c 03
+
+Translator 1.7: Rude Solo Light Blink
+Options: stop=false
+Incoming: MIDI 90 73 01
+Outgoing: MIDI B0 0C 16 B0 2c 53
+
+Translator 1.8: LvlToTape/Name-ValueOn
+Options: stop=false
+Incoming: MIDI 90 34 7F
+Outgoing: MIDI B0 0C 0C B0 2c 44
+
+Translator 1.9: LvlToTape/Name-ValueOff
+Options: stop=false
+Incoming: MIDI 90 34 00
+Outgoing: MIDI B0 0C 0C B0 2c 04
+
+Translator 1.10: LvlToTape/Name-ValueBlink
+Options: stop=false
+Incoming: MIDI 90 34 01
+Outgoing: MIDI B0 0C 0C B0 2c 54
+
+Translator 1.11: DigTrim/SmpteLtOn
+Options: stop=false
+Incoming: MIDI 90 35 7F
+Outgoing: MIDI B0 0C 0C B0 2c 43
+
+Translator 1.12: DigTrim/SmpteLtOff
+Options: stop=false
+Incoming: MIDI 90 35 00
+Outgoing: MIDI B0 0C 0C B0 2c 03
+
+Translator 1.13: DigTrim/SmpteLtBlink
+Options: stop=false
+Incoming: MIDI 90 35 01
+Outgoing: MIDI B0 0C 0C B0 2c 53
+
+Translator 1.14: Aux 1 /TrkAsignLOn
+Options: stop=false
+Incoming: MIDI 90 28 7F
+Outgoing: MIDI B0 0C 0B B0 2c 47
+
+Translator 1.15: Aux 1 /TrkAsignLOff
+Options: stop=false
+Incoming: MIDI 90 28 00
+Outgoing: MIDI B0 0C 0B B0 2c 07
+
+Translator 1.16: Aux 1 /TrkAsignLBlink
+Options: stop=false
+Incoming: MIDI 90 28 01
+Outgoing: MIDI B0 0C 0B B0 2c 57
+
+Translator 1.17: Aux 2/SendLOn
+Options: stop=false
+Incoming: MIDI 90 29 7F
+Outgoing: MIDI B0 0C 0B B0 2c 46
+
+Translator 1.18: Aux 2/SendLOff
+Options: stop=false
+Incoming: MIDI 90 29 00
+Outgoing: MIDI B0 0C 0B B0 2c 06
+
+Translator 1.19: Aux 2/SendLBlink
+Options: stop=false
+Incoming: MIDI 90 29 01
+Outgoing: MIDI B0 0C 0B B0 2c 56
+
+Translator 1.20: Aux 3/ PanSurroundLOn
+Options: stop=false
+Incoming: MIDI 90 2A 7F
+Outgoing: MIDI B0 0C 0B B0 2c 45
+
+Translator 1.21: Aux 3/ PanSurroundLOff
+Options: stop=false
+Incoming: MIDI 90 2A 00
+Outgoing: MIDI B0 0C 0B B0 2c 05
+
+Translator 1.22: Aux 3/ PanSurroundLBlink
+Options: stop=false
+Incoming: MIDI 90 2A 01
+Outgoing: MIDI B0 0C 0B B0 2c 55
+
+Translator 1.23: Aux 4/ PlugInLOn
+Options: stop=false
+Incoming: MIDI 90 2B 7F
+Outgoing: MIDI B0 0C 0B B0 2c 44
+
+Translator 1.24: Aux 4/ PlugInLOff
+Options: stop=false
+Incoming: MIDI 90 2B 00
+Outgoing: MIDI B0 0C 0B B0 2c 04
+
+Translator 1.25: Aux 4/ PlugInLBlink
+Options: stop=false
+Incoming: MIDI 90 2B 01
+Outgoing: MIDI B0 0C 0B B0 2c 54
+
+Translator 1.26: Aux 5/ EQ LOn
+Options: stop=false
+Incoming: MIDI 90 2C 7F
+Outgoing: MIDI B0 0C 0B B0 2c 43
+
+Translator 1.27: Aux 5/ EQ LOff
+Options: stop=false
+Incoming: MIDI 90 2C 00
+Outgoing: MIDI B0 0C 0B B0 2c 03
+
+Translator 1.28: Aux 5/ EQ LBlink
+Options: stop=false
+Incoming: MIDI 90 2C 01
+Outgoing: MIDI B0 0C 0B B0 2c 53
+
+Translator 1.29: Aux 7/ Inst LOn
+Options: stop=false
+Incoming: MIDI 90 2D 7F
+Outgoing: MIDI B0 0C 0C B0 2c 46
+
+Translator 1.30: Aux 7/ Inst LOff
+Options: stop=false
+Incoming: MIDI 90 2D 00
+Outgoing: MIDI B0 0C 0C B0 2c 06
+
+Translator 1.31: Aux 7/ Inst LBlink
+Options: stop=false
+Incoming: MIDI 90 2D 01
+Outgoing: MIDI B0 0C 0C B0 2c 56
+
+Translator 1.32: Pan 11-12/Chnl UpLOn
+Options: stop=false
+Incoming: MIDI 90 31 7F
+Outgoing: MIDI B0 0F 0A B0 2F 42
+
+Translator 1.33: Pan 11-12/ Chnl Up LOff
+Options: stop=false
+Incoming: MIDI 90 31 00
+Outgoing: MIDI B0 0C 0A B0 2c 02
+
+Translator 1.34: Pan 11-12 Chnl Up LBlink
+Options: stop=false
+Incoming: MIDI B0 2F 05
+Outgoing: MIDI B0 0C 0A B0 2c 52
+
+Translator 1.35: PanBelowV/Flip LOn
+Options: stop=false
+Incoming: MIDI 90 32 7F
+Outgoing: MIDI B0 0C 0B B0 2c 42
+
+Translator 1.36: PanBelowV/Flip LOff
+Options: stop=false
+Incoming: MIDI 90 32 00
+Outgoing: MIDI B0 0C 0B B0 2c 02
+
+Translator 1.37: PanBelowV/Flip LBlink
+Options: stop=false
+Incoming: MIDI 90 32 01
+Outgoing: MIDI B0 0C 0B B0 2c 52
+
+Translator 1.38: FC On/ Glbl Midi  LOn
+Options: stop=false
+Incoming: MIDI 90 3E 7F
+Outgoing: MIDI B0 0C 1C B0 2c 41
+
+Translator 1.39: FC On/ Glbl Midi  LOff
+Options: stop=false
+Incoming: MIDI 90 3E 7F
+Outgoing: MIDI B0 0C 1C B0 2c 01
+
+Translator 1.40: FC On/ Glbl Midi  LBlink
+Options: stop=false
+Incoming: MIDI 90 3E 01
+Outgoing: MIDI B0 0C 1C B0 2c 51
+
+Translator 1.41: FC Setup/ GlblInputs LOn
+Options: stop=false
+Incoming: MIDI 90 3F 7F
+Outgoing: MIDI B0 0C 1C B0 2c 47
+
+Translator 1.42: FC Setup/ GlblInputs LOff
+Options: stop=false
+Incoming: MIDI 90 3F 00
+Outgoing: MIDI B0 0C 1C B0 2c 07
+
+Translator 1.43: FC Setup/ GlblInputs LBlink
+Options: stop=false
+Incoming: MIDI 90 3F 01
+Outgoing: MIDI B0 0C 1C B0 2c 57
+
+Translator 1.44: FCMemoryA/AudioTrks LOn
+Options: stop=false
+Incoming: MIDI 90 40 7F
+Outgoing: MIDI B0 0C 0C B0 2c 45
+
+Translator 1.45: FCMemoryA/AudioTrks LOff
+Options: stop=false
+Incoming: MIDI 90 40 00
+Outgoing: MIDI B0 0C 0C B0 2c 05
+
+Translator 1.46: FCMemoryA/AudioTrks LBlink
+Options: stop=false
+Incoming: MIDI 90 40 01
+Outgoing: MIDI B0 0C 0C B0 2c 55
+
+Translator 1.47: FCMemoryB/AudioInstLOn
+Options: stop=false
+Incoming: MIDI 90 41 7F
+Outgoing: MIDI B0 0C 1C B0 2c 40
+
+Translator 1.48: FCMemoryB/AudioInstLOff
+Options: stop=false
+Incoming: MIDI 90 41 00
+Outgoing: MIDI B0 0C 1C B0 2c 00
+
+Translator 1.49: FCMemoryB/AudioInstLBlink
+Options: stop=false
+Incoming: MIDI 90 41 01
+Outgoing: MIDI B0 0C 1C B0 2c 50
+
+Translator 1.50: FCGate/Glbl Aux LOn
+Options: stop=false
+Incoming: MIDI 90 42 7F
+Outgoing: MIDI B0 0C 09 B0 2c 45
+
+Translator 1.51: FCGate/Glbl Aux LOff
+Options: stop=false
+Incoming: MIDI 90 42 00
+Outgoing: MIDI B0 0C 09 B0 2c 05
+
+Translator 1.52: FCGate/Glbl Aux LBlink
+Options: stop=false
+Incoming: MIDI 90 42 01
+Outgoing: MIDI B0 0C 09 B0 2c 55
+
+Translator 1.53: FCCompress/Glbl Busses LOn
+Options: stop=false
+Incoming: MIDI 90 43 7F
+Outgoing: MIDI B0 0C 09 B0 2c 41
+
+Translator 1.54: FCCompress/Glbl Busses LOff
+Options: stop=false
+Incoming: MIDI 90 43 00
+Outgoing: MIDI B0 0C 09 B0 2c 01
+
+Translator 1.55: FCCompress/Glbl Busses LBlink
+Options: stop=false
+Incoming: MIDI 90 43 01
+Outgoing: MIDI B0 0C 09 B0 2c 51
+
+Translator 1.56: FCPlugIns/Glbl Outputs LOn
+Options: stop=false
+Incoming: MIDI 90 44 7F
+Outgoing: MIDI B0 0C 09 B0 2c 44
+
+Translator 1.57: FCPlugIns/Glbl Outputs LOff
+Options: stop=false
+Incoming: MIDI 90 44 00
+Outgoing: MIDI B0 0C 09 B0 2c 04
+
+Translator 1.58: FCPlugIns/Glbl Outputs LBlink
+Options: stop=false
+Incoming: MIDI 90 44 01
+Outgoing: MIDI B0 0C 09 B0 2c 54
+
+Translator 1.59: FCLoadPatch/Glbl User LOn
+Options: stop=false
+Incoming: MIDI 90 45 7F
+Outgoing: MIDI B0 0C 09 B0 2c 40
+
+Translator 1.60: FCLoadPatch/Glbl User LOff
+Options: stop=false
+Incoming: MIDI 90 45 00
+Outgoing: MIDI B0 0C 09 B0 2c 00
+
+Translator 1.61: FCLoadPatch/Glbl User LBlink
+Options: stop=false
+Incoming: MIDI 90 45 01
+Outgoing: MIDI B0 0C 09 B0 2c 50
+
+Translator 1.62: Auto Bypass/Read/OffLtOn
+Options: stop=false
+Incoming: MIDI 90 4A 7F
+Outgoing: MIDI B0 0C 18 B0 2c 43
+
+Translator 1.63: Auto Bypass/Read/OffLtOff
+Options: stop=false
+Incoming: MIDI 90 4A 00
+Outgoing: MIDI B0 0C 18 B0 2c 03
+
+Translator 1.64: Auto Bypass/Read/OffLtBlink
+Options: stop=false
+Incoming: MIDI 90 4A 01
+Outgoing: MIDI B0 0C 18 B0 2c 53
+
+Translator 1.65: AutoFaders/WriteLtOn
+Options: stop=false
+Incoming: MIDI 90 4B 7F
+Outgoing: MIDI B0 0C 17 B0 2c 42
+
+Translator 1.66: AutoFaders/WriteLtOff
+Options: stop=false
+Incoming: MIDI 90 4B 00
+Outgoing: MIDI B0 0C 17 B0 2c 02
+
+Translator 1.67: AutoFaders/WriteLtBlink
+Options: stop=false
+Incoming: MIDI 90 4B 01
+Outgoing: MIDI B0 0C 17 B0 2c 52
+
+Translator 1.68: AutoMute/TrimLtOn
+Options: stop=false
+Incoming: MIDI 90 4C 7F
+Outgoing: MIDI B0 0C 17 B0 2c 45
+
+Translator 1.69: AutoMute/TrimLtOff
+Options: stop=false
+Incoming: MIDI 90 4C 00
+Outgoing: MIDI B0 0C 17 B0 2c 05
+
+Translator 1.70: AutoMute/TrimLtBlink
+Options: stop=false
+Incoming: MIDI 90 4C 01
+Outgoing: MIDI B0 0C 17 B0 2c 55
+
+Translator 1.71: AutoTouch/TouchLtOn
+Options: stop=false
+Incoming: MIDI 90 4D 7F
+Outgoing: MIDI B0 0C 18 B0 2c 45
+
+Translator 1.72: AutoTouch/TouchLtOff
+Options: stop=false
+Incoming: MIDI 90 4D 00
+Outgoing: MIDI B0 0C 18 B0 2c 05
+
+Translator 1.73: AutoTouch/TouchLtBlink
+Options: stop=false
+Incoming: MIDI 90 4D 01
+Outgoing: MIDI B0 0C 18 B0 2c 55
+
+Translator 1.74: AutoPan/LatchLtOn
+Options: stop=false
+Incoming: MIDI 90 4E 7F
+Outgoing: MIDI B0 0C 17 B0 2c 41
+
+Translator 1.75: AutoPan/LatchLtOff
+Options: stop=false
+Incoming: MIDI 90 4E 00
+Outgoing: MIDI B0 0C 17 B0 2c 01
+
+Translator 1.76: AutoPan/LatchLtBlink
+Options: stop=false
+Incoming: MIDI 90 4E 01
+Outgoing: MIDI B0 0C 17 B0 2c 51
+
+Translator 1.77: AutoTouch/TouchLtBlink
+Options: stop=false
+Incoming: MIDI 90 4D 01
+Outgoing: MIDI B0 0C 18 B0 2c 55
+
+Translator 1.78: Auto Trim/Group LtOn
+Options: stop=false
+Incoming: MIDI 90 4F 7F
+Outgoing: MIDI B0 0C 18 B0 2c 40
+
+Translator 1.79: Auto Trim/GroupLtOff
+Options: stop=false
+Incoming: MIDI 90 4F 00
+Outgoing: MIDI B0 0C 18 B0 2c 00
+
+Translator 1.80: Auto Trim/GroupLtBlink
+Options: stop=false
+Incoming: MIDI 90 4F 01
+Outgoing: MIDI B0 0C 18 B0 2c 50
+
+Translator 1.81: Bus 2/GlobalLtOn
+Options: stop=false
+Incoming: MIDI 90 33 7F
+Outgoing: MIDI B0 0C 17 B0 2C 44
+
+Translator 1.82: Bus 2/GlobalLtOff
+Options: stop=false
+Incoming: MIDI 90 33 00
+Outgoing: MIDI B0 0C 17 B0 2C 04
+
+Translator 1.83: Fader 1Move
+Options: stop=false
+Incoming: MIDI E0 qq pp
+Outgoing: MIDI B0 00 pp B0 20 qq
+
+Translator 1.84: Fader 2 Move
+Options: stop=false
+Incoming: MIDI E1 qq pp
+Outgoing: MIDI B0 01 pp B0 21 qq
+
+Translator 1.85: Fader 3 Move
+Options: stop=false
+Incoming: MIDI E2 qq pp
+Outgoing: MIDI B0 02 pp B0 22 qq
+
+Translator 1.86: Fader 4 Move
+Options: stop=false
+Incoming: MIDI E3 qq pp
+Outgoing: MIDI B0 03 pp B0 23 qq
+
+Translator 1.87: Fader 5  Move
+Options: stop=false
+Incoming: MIDI E4 qq pp
+Outgoing: MIDI B0 04 pp B0 24 qq
+
+Translator 1.88: Fader 6 Move
+Options: stop=false
+Incoming: MIDI E5 qq pp
+Outgoing: MIDI B0 05 pp B0 25 qq
+
+Translator 1.89: Fader 7 Move
+Options: stop=false
+Incoming: MIDI E6 qq pp
+Outgoing: MIDI B0 06 pp B0 26 qq
+
+Translator 1.90: Fader 8 Move
+Options: stop=false
+Incoming: MIDI E7 qq pp
+Outgoing: MIDI B0 07 pp B0 27 qq
+
+Translator 1.91: TC Display?
+Options: disabled, stop=false
+Incoming: MIDI B0 49 pp
+Outgoing: MIDI f0 00 00 66 05 00 11 02 12 13 14 15 16 17 18 f7
+
+Translator 1.92: TC Display?
+Options: disabled, stop=false
+Incoming: MIDI B0 49 pp
+Outgoing: MIDI ff
+
+Translator 1.93: Ch 1 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>16 then exit rules, skip Outgoing Action
+  if pp<=16 then qq=0+0
+  rr=pp
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq pp
+
+Translator 1.94: Ch 2 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>32 then exit rules, skip Outgoing Action
+  if pp<16 then exit rules, skip Outgoing Action
+  if pp>=16 then qq=0+1
+  rr=pp-16
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq rr
+
+Translator 1.95: Ch 3 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>48 then exit rules, skip Outgoing Action
+  if pp<32 then exit rules, skip Outgoing Action
+  if pp>=32 then qq=0+2
+  rr=pp-16
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq rr
+
+Translator 1.96: Ch 4 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>64 then exit rules, skip Outgoing Action
+  if pp<48 then exit rules, skip Outgoing Action
+  if pp>=48 then qq=3
+  rr=pp-32
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq rr
+
+Translator 1.97: Ch 5 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>80 then exit rules, skip Outgoing Action
+  if pp<64 then exit rules, skip Outgoing Action
+  if pp>=64 then qq=4
+  rr=pp-64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq rr
+
+Translator 1.98: Ch 6 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>96 then exit rules, skip Outgoing Action
+  if pp<80 then exit rules, skip Outgoing Action
+  if pp>=80 then qq=5
+  rr=pp-80
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq rr
+
+Translator 1.99: Ch 7 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>112 then exit rules, skip Outgoing Action
+  if pp<96 then exit rules, skip Outgoing Action
+  if pp>=96 then qq=6
+  rr=pp-96
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq rr
+
+Translator 1.100: Ch 8 Meters
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp>128 then exit rules, skip Outgoing Action
+  if pp<112 then exit rules, skip Outgoing Action
+  if pp>=112 then qq=7
+  rr=pp-112
+  exit rules, execute Outgoing Action
+Outgoing: MIDI a0 qq rr
+
+Translator 1.101: Ch 1 Meters Off
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Rules: 
+  if pp<=11 then qq=0+0
+  rr=pp
+  exit rules, execute Outgoing Action
+  if pp>10 then skip next rule
+Outgoing: MIDI a0 00 00
+
+Translator 1.102: Ch 1 Meters Off
+Options: disabled, stop=false
+Incoming: MIDI D0 pp
+Outgoing: MIDI a0 00 00
+
+Translator 1.103: Ch 1 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 30 pp
+Outgoing: MIDI B0 10 pp
+
+Translator 1.104: Ch 1 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 30 xx
+Rules: 
+  if xx!=64 then exit rules, skip Outgoing Action
+  if xx==64 then Goto "Dot"
+  Label "Dot"
+  ga=pp
+  pp=ga+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 10 pp
+
+Translator 1.105: Ch 2 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 31 ga
+Outgoing: MIDI B0 11 ga
+
+Translator 1.106: Ch 2 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 31 xx
+Rules: 
+  if xx!=64 then exit rules, skip Outgoing Action
+  if xx==64 then Goto "Dot"
+  Label "Dot"
+  ga=pp
+  pp=ga+64
+  exit rules, execute Outgoing Action
+Outgoing: MIDI B0 11 pp
+
+Translator 1.107: Ch 3 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 32 pp
+Outgoing: MIDI B0 12 pp
+
+Translator 1.108: Ch 3 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 42 pp
+Rules: 
+  pp=pp+63
+Outgoing: MIDI B0 12 pp
+
+Translator 1.109: Ch 4 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 33 pp
+Outgoing: MIDI B0 13 pp
+
+Translator 1.110: Ch 4 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 43 pp
+Rules: 
+  pp=pp+63
+Outgoing: MIDI B0 13 pp
+
+Translator 1.111: Ch 5 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 34 pp
+Outgoing: MIDI B0 14 pp
+
+Translator 1.112: Ch 5 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 44 pp
+Rules: 
+  pp=pp+63
+Outgoing: MIDI B0 14 pp
+
+Translator 1.113: Ch 6 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 35 pp
+Outgoing: MIDI B0 15 pp
+
+Translator 1.114: Ch 6 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 45 pp
+Rules: 
+  pp=pp+63
+Outgoing: MIDI B0 15 pp
+
+Translator 1.115: Ch 7 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 36 pp
+Outgoing: MIDI B0 16 pp
+
+Translator 1.116: Ch 7 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 46 pp
+Rules: 
+  pp=pp+63
+Outgoing: MIDI B0 16 pp
+
+Translator 1.117: Ch 8 Vpot Leds
+Options: stop=false
+Incoming: MIDI B0 37 pp
+Outgoing: MIDI B0 17 pp
+
+Translator 1.118: Ch 8 Vpot LedsDot
+Options: disabled, stop=false
+Incoming: MIDI B0 47 pp
+Rules: 
+  pp=pp+63
+Outgoing: MIDI B0 17 pp
+
+Translator 1.119: Ch 1 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 00 7F
+Outgoing: MIDI B0 0C 00 B0 2c 47
+
+Translator 1.120: Ch 1 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 00 00
+Outgoing: MIDI B0 0C 00 B0 2c 07
+
+Translator 1.121: Ch 1 Rec/ReadyLight Blink
+Options: stop=false
+Incoming: MIDI 90 00 01
+Outgoing: MIDI B0 0C 00 B0 2c 57
+
+Translator 1.122: Ch 1 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 18 7F
+Outgoing: MIDI B0 0C 00 B0 2c 41
+
+Translator 1.123: Ch 1 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 18 00
+Outgoing: MIDI B0 0C 00 B0 2c 01
+
+Translator 1.124: Ch 1 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 18 01
+Outgoing: MIDI B0 0C 00 B0 2c 51
+
+Translator 1.125: Ch 1 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 08 7f
+Outgoing: MIDI B0 0C 00 B0 2c 43
+
+Translator 1.126: Ch 1 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 08 00
+Outgoing: MIDI B0 0C 00 B0 2c 03
+
+Translator 1.127: Ch 1 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 08 01
+Outgoing: MIDI B0 0C 00 B0 2c 53
+
+Translator 1.128: Ch 1 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 10 7f
+Outgoing: MIDI B0 0C 00 B0 2c 42
+
+Translator 1.129: Ch 1Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 10 00
+Outgoing: MIDI B0 0C 00 B0 2c 02
+
+Translator 1.130: Ch 1 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 10 01
+Outgoing: MIDI B0 0C 00 B0 2c 52
+
+Translator 1.131: Ch 2 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 01 7F
+Outgoing: MIDI B0 0C 01 B0 2c 47
+
+Translator 1.132: Ch 2 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 01 00
+Outgoing: MIDI B0 0C 01 B0 2c 07
+
+Translator 1.133: Ch 2 Rec/Ready Light Blimk
+Options: stop=false
+Incoming: MIDI 90 01 01
+Outgoing: MIDI B0 0C 01 B0 2c 57
+
+Translator 1.134: Ch 2 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 19 7F
+Outgoing: MIDI B0 0C 01 B0 2c 41
+
+Translator 1.135: Ch 2 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 19 00
+Outgoing: MIDI B0 0C 01 B0 2c 01
+
+Translator 1.136: Ch 2 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 19 01
+Outgoing: MIDI B0 0C 01 B0 2c 51
+
+Translator 1.137: Ch 2 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 09 7f
+Outgoing: MIDI B0 0C 01 B0 2c 43
+
+Translator 1.138: Ch 2 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 09 00
+Outgoing: MIDI B0 0C 01 B0 2c 03
+
+Translator 1.139: Ch 2 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 09 01
+Outgoing: MIDI B0 0C 01 B0 2c 53
+
+Translator 1.140: Ch 2 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 11 7f
+Outgoing: MIDI B0 0C 01 B0 2c 42
+
+Translator 1.141: Ch 2 Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 11 00
+Outgoing: MIDI B0 0C 01 B0 2c 02
+
+Translator 1.142: Ch 2 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 11 01
+Outgoing: MIDI B0 0C 01 B0 2c 52
+
+Translator 1.143: Ch 3 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 02 7F
+Outgoing: MIDI B0 0C 02 B0 2c 47
+
+Translator 1.144: Ch 3 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 02 00
+Outgoing: MIDI B0 0C 02 B0 2c 07
+
+Translator 1.145: Ch 23Rec/Ready Light Blimk
+Options: stop=false
+Incoming: MIDI 90 02 01
+Outgoing: MIDI B0 0C 02 B0 2c 57
+
+Translator 1.146: Ch 3 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 1A 7F
+Outgoing: MIDI B0 0C 02 B0 2c 41
+
+Translator 1.147: Ch 3 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 1A 00
+Outgoing: MIDI B0 0C 02 B0 2c 01
+
+Translator 1.148: Ch 3 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 1A 01
+Outgoing: MIDI B0 0C 02 B0 2c 51
+
+Translator 1.149: Ch 3 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 0A 7f
+Outgoing: MIDI B0 0C 02 B0 2c 43
+
+Translator 1.150: Ch 3 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 0A 00
+Outgoing: MIDI B0 0C 02 B0 2c 03
+
+Translator 1.151: Ch 3 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 0A 01
+Outgoing: MIDI B0 0C 02 B0 2c 53
+
+Translator 1.152: Ch 3 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 12 7f
+Outgoing: MIDI B0 0C 02 B0 2c 42
+
+Translator 1.153: Ch 3 Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 12 00
+Outgoing: MIDI B0 0C 02 B0 2c 02
+
+Translator 1.154: Ch 3 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 12 01
+Outgoing: MIDI B0 0C 02 B0 2c 52
+
+Translator 1.155: Ch 4 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 03 7F
+Outgoing: MIDI B0 0C 03 B0 2c 47
+
+Translator 1.156: Ch 4 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 03 00
+Outgoing: MIDI B0 0C 03 B0 2c 07
+
+Translator 1.157: Ch 4 Rec/Ready Light Blimk
+Options: stop=false
+Incoming: MIDI 90 03 01
+Outgoing: MIDI B0 0C 03 B0 2c 57
+
+Translator 1.158: Ch 4 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 1B 7F
+Outgoing: MIDI B0 0C 03 B0 2c 41
+
+Translator 1.159: Ch 4 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 1B 00
+Outgoing: MIDI B0 0C 03 B0 2c 01
+
+Translator 1.160: Ch 4 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 1B 01
+Outgoing: MIDI B0 0C 03 B0 2c 51
+
+Translator 1.161: Ch 4 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 0B 7f
+Outgoing: MIDI B0 0C 03 B0 2c 43
+
+Translator 1.162: Ch 4 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 0B 00
+Outgoing: MIDI B0 0C 03 B0 2c 03
+
+Translator 1.163: Ch 4 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 0B 01
+Outgoing: MIDI B0 0C 03 B0 2c 53
+
+Translator 1.164: Ch 4 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 13 7f
+Outgoing: MIDI B0 0C 03 B0 2c 42
+
+Translator 1.165: Ch 4 Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 13 00
+Outgoing: MIDI B0 0C 03 B0 2c 02
+
+Translator 1.166: Ch 4 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 13 01
+Outgoing: MIDI B0 0C 03 B0 2c 52
+
+Translator 1.167: Ch 5 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 04 7F
+Outgoing: MIDI B0 0C 04 B0 2c 47
+
+Translator 1.168: Ch 5 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 04 00
+Outgoing: MIDI B0 0C 04 B0 2c 07
+
+Translator 1.169: Ch 5 Rec/Ready Light Blimk
+Options: stop=false
+Incoming: MIDI 90 04 01
+Outgoing: MIDI B0 0C 04 B0 2c 57
+
+Translator 1.170: Ch 5 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 1C 7F
+Outgoing: MIDI B0 0C 04 B0 2c 41
+
+Translator 1.171: Ch 5 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 1C 00
+Outgoing: MIDI B0 0C 04 B0 2c 01
+
+Translator 1.172: Ch 5 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 1C 01
+Outgoing: MIDI B0 0C 04 B0 2c 51
+
+Translator 1.173: Ch 5 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 0C 7f
+Outgoing: MIDI B0 0C 04 B0 2c 43
+
+Translator 1.174: Ch 5 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 0C 00
+Outgoing: MIDI B0 0C 04 B0 2c 03
+
+Translator 1.175: Ch 5 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 0C 01
+Outgoing: MIDI B0 0C 04 B0 2c 53
+
+Translator 1.176: Ch 5 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 14 7f
+Outgoing: MIDI B0 0C 04 B0 2c 42
+
+Translator 1.177: Ch 5 Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 14 00
+Outgoing: MIDI B0 0C 04 B0 2c 02
+
+Translator 1.178: Ch 5 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 14 01
+Outgoing: MIDI B0 0C 04 B0 2c 52
+
+Translator 1.179: Ch 6 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 05 7F
+Outgoing: MIDI B0 0C 05 B0 2c 47
+
+Translator 1.180: Ch 6 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 05 00
+Outgoing: MIDI B0 0C 05 B0 2c 07
+
+Translator 1.181: Ch 6 Rec/Ready Light Blimk
+Options: stop=false
+Incoming: MIDI 90 05 01
+Outgoing: MIDI B0 0C 05 B0 2c 57
+
+Translator 1.182: Ch 6 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 1D 7F
+Outgoing: MIDI B0 0C 05 B0 2c 41
+
+Translator 1.183: Ch 6 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 1D 00
+Outgoing: MIDI B0 0C 05 B0 2c 01
+
+Translator 1.184: Ch 6 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 1D 01
+Outgoing: MIDI B0 0C 05 B0 2c 51
+
+Translator 1.185: Ch 6 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 0D 7f
+Outgoing: MIDI B0 0C 05 B0 2c 43
+
+Translator 1.186: Ch 6 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 0D 00
+Outgoing: MIDI B0 0C 05 B0 2c 03
+
+Translator 1.187: Ch 6 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 0D 01
+Outgoing: MIDI B0 0C 05 B0 2c 53
+
+Translator 1.188: Ch 6 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 15 7f
+Outgoing: MIDI B0 0C 05 B0 2c 42
+
+Translator 1.189: Ch 6 Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 15 00
+Outgoing: MIDI B0 0C 05 B0 2c 02
+
+Translator 1.190: Ch 6 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 15 01
+Outgoing: MIDI B0 0C 05 B0 2c 52
+
+Translator 1.191: Ch 7 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 06 7F
+Outgoing: MIDI B0 0C 06 B0 2c 47
+
+Translator 1.192: Ch 7 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 06 00
+Outgoing: MIDI B0 0C 06 B0 2c 07
+
+Translator 1.193: Ch 7 Rec/Ready Light Blimk
+Options: stop=false
+Incoming: MIDI 90 06 01
+Outgoing: MIDI B0 0C 06 B0 2c 57
+
+Translator 1.194: Ch 7 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 1E 7F
+Outgoing: MIDI B0 0C 06 B0 2c 41
+
+Translator 1.195: Ch 7 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 1E 00
+Outgoing: MIDI B0 0C 06 B0 2c 01
+
+Translator 1.196: Ch 7 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 1E 01
+Outgoing: MIDI B0 0C 06 B0 2c 51
+
+Translator 1.197: Ch 7 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 0E 7f
+Outgoing: MIDI B0 0C 06 B0 2c 43
+
+Translator 1.198: Ch 7 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 0E 00
+Outgoing: MIDI B0 0C 06 B0 2c 03
+
+Translator 1.199: Ch 7 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 0E 01
+Outgoing: MIDI B0 0C 06 B0 2c 53
+
+Translator 1.200: Ch 7 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 16 7f
+Outgoing: MIDI B0 0C 06 B0 2c 42
+
+Translator 1.201: Ch 7 Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 16 00
+Outgoing: MIDI B0 0C 06 B0 2c 02
+
+Translator 1.202: Ch 7 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 16 01
+Outgoing: MIDI B0 0C 06 B0 2c 52
+
+Translator 1.203: Ch 8 Rec/Ready Light On
+Options: stop=false
+Incoming: MIDI 90 07 7F
+Outgoing: MIDI B0 0C 07 B0 2c 47
+
+Translator 1.204: Ch 8 Rec/Ready Light Off
+Options: stop=false
+Incoming: MIDI 90 07 00
+Outgoing: MIDI B0 0C 07 B0 2c 07
+
+Translator 1.205: Ch 8 Rec/Ready Light Blimk
+Options: stop=false
+Incoming: MIDI 90 07 01
+Outgoing: MIDI B0 0C 07 B0 2c 57
+
+Translator 1.206: Ch 8 SelectLight On
+Options: stop=false
+Incoming: MIDI 90 1F 7F
+Outgoing: MIDI B0 0C 07 B0 2c 41
+
+Translator 1.207: Ch 8 Select Light Off
+Options: stop=false
+Incoming: MIDI 90 1F 00
+Outgoing: MIDI B0 0C 07 B0 2c 01
+
+Translator 1.208: Ch 8 Select Light Blink
+Options: stop=false
+Incoming: MIDI 90 1F 01
+Outgoing: MIDI B0 0C 07 B0 2c 51
+
+Translator 1.209: Ch 8 Solo Light On
+Options: stop=false
+Incoming: MIDI 90 0F 7f
+Outgoing: MIDI B0 0C 07 B0 2c 43
+
+Translator 1.210: Ch 8 Solo Light Off
+Options: stop=false
+Incoming: MIDI 90 0F 00
+Outgoing: MIDI B0 0C 07 B0 2c 03
+
+Translator 1.211: Ch 8 Solo LightBlink
+Options: stop=false
+Incoming: MIDI 90 0F 01
+Outgoing: MIDI B0 0C 07 B0 2c 53
+
+Translator 1.212: Ch 8 Mute Light On
+Options: stop=false
+Incoming: MIDI 90 17 7f
+Outgoing: MIDI B0 0C 07 B0 2c 42
+
+Translator 1.213: Ch 8 Mute Light Off
+Options: stop=false
+Incoming: MIDI 90 17 00
+Outgoing: MIDI B0 0C 07 B0 2c 02
+
+Translator 1.214: Ch 8 Mute Light Blink
+Options: stop=false
+Incoming: MIDI 90 17 01
+Outgoing: MIDI B0 0C 07 B0 2c 52
+
+Translator 1.215: Num 1/ Zoom LtOn
+Options: stop=false
+Incoming: MIDI 90 64 7F
+Outgoing: MIDI B0 0C 13 B0 2C 41, delay:2sec
+
+Translator 1.216: Num 1/ Zoom LtOff
+Options: stop=false
+Incoming: MIDI 90 64 00
+Outgoing: MIDI B0 0C 13 B0 2C 01, delay:2sec
+
+Translator 1.217: Cut / Click LtOn
+Options: stop=false
+Incoming: MIDI 90 59 7F
+Outgoing: MIDI B0 0C 1A B0 2C 41
+
+Translator 1.218: Cut / Click LtOff
+Options: stop=false
+Incoming: MIDI 90 59 00
+Outgoing: MIDI B0 0C 1A B0 2C 01
+
+Translator 1.219: Copy / Marker LtOn
+Options: stop=false
+Incoming: MIDI 90 54 7F
+Outgoing: MIDI B0 0C 1A B0 2C 44
+
+Translator 1.220: Copy / Marker LtOff
+Options: stop=false
+Incoming: MIDI 90 54 00
+Outgoing: MIDI B0 0C 1A B0 2C 04
+
+Translator 1.221: Undo LtOn
+Options: stop=false
+Incoming: MIDI 90 51 7F
+Outgoing: MIDI B0 0C 08 B0 2F 43
+
+Translator 1.222: Undo LtOff
+Options: stop=false
+Incoming: MIDI 90 51 00
+Outgoing: MIDI B0 0C 08 B0 2F 03
+
+Translator 1.223: Enter LtOn
+Options: stop=false
+Incoming: MIDI 90 53 7F
+Outgoing: MIDI B0 2C 40 B0 2C 40
+
+Translator 1.224: Enter LtOff
+Options: stop=false
+Incoming: MIDI 90 53 00
+Outgoing: MIDI B0 2C 40 B0 2C 00
+
+Translator 1.225: Loop LtOn
+Options: stop=false
+Incoming: MIDI 90 56 7F
+Outgoing: MIDI B0 0C 0F B0 2C 43
+
+Translator 1.226: Loop LtOff
+Options: stop=false
+Incoming: MIDI 90 56 00
+Outgoing: MIDI B0 0C 0F B0 2C 03
+
+Translator 1.227: Loop / Drop LtBlink
+Options: stop=false
+Incoming: MIDI 90 56 01
+Outgoing: MIDI B0 0C 0F B0 2C 53
+
+Translator 1.228: Rew Light On
+Options: stop=false
+Incoming: MIDI 90 5B 7F
+Outgoing: MIDI B0 0C 0E B0 2c 41
+
+Translator 1.229: Rew Light Off
+Options: stop=false
+Incoming: MIDI 90 5B 00
+Outgoing: MIDI B0 0C 0E B0 2c 01
+
+Translator 1.230: FF Light On
+Options: stop=false
+Incoming: MIDI 90 5C 7F
+Outgoing: MIDI B0 0C 0E B0 2c 42
+
+Translator 1.231: FFLight Off
+Options: stop=false
+Incoming: MIDI 90 5C 00
+Outgoing: MIDI B0 0C 0E B0 2c 02
+
+Translator 1.232: Stop Light On
+Options: stop=false
+Incoming: MIDI 90 5D 7F
+Outgoing: MIDI B0 0C 0E B0 2c 43
+
+Translator 1.233: Stop Light Off
+Options: stop=false
+Incoming: MIDI 90 5D 00
+Outgoing: MIDI B0 0C 0E B0 2c 03
+
+Translator 1.234: PlayLight On
+Options: stop=false
+Incoming: MIDI 90 5E 7F
+Outgoing: MIDI B0 0C 0E B0 2c 44
+
+Translator 1.235: Play Light Off
+Options: stop=false
+Incoming: MIDI 90 5E 00
+Outgoing: MIDI B0 0C 0E B0 2c 04
+
+Translator 1.236: RecLight On
+Options: stop=false
+Incoming: MIDI 90 5F 7F
+Outgoing: MIDI B0 0C 0E B0 2c 45
+
+Translator 1.237: RecLight Off
+Options: stop=false
+Incoming: MIDI 90 5F 00
+Outgoing: MIDI B0 0C 0E B0 2c 05
+
+Translator 1.238: Scrub LEd On
+Options: stop=false
+Incoming: MIDI B0 65 7F
+Outgoing: MIDI B0 0C 0D B0 2c 45
+
+Translator 1.239: Scrub LEd Off
+Options: stop=false
+Incoming: MIDI B0 65 00
+Outgoing: MIDI B0 0C 0D B0 2c 05
+
+Translator 1.240: Scrub LEd Blink
+Options: stop=false
+Incoming: MIDI B0 65 01
+Outgoing: MIDI B0 0C 0D B0 2c 46
+_____________________________________________________________
+Preset 2: Switcher
+
+Translator 2.0: FC SavePatch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 43
+Outgoing: deactivate preset number 0
+
+Translator 2.1: FC SavePatch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 43
+Outgoing: deactivate preset number 1
+
+Translator 2.2: FC SavePatch Pressed
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 43
+Outgoing: activate only next preset
+
+Translator 2.3: FC SavePatch Released
+Options: stop=false
+Incoming: MIDI B0 0F 09 B0 2F 03
+Outgoing: unknown empty action
