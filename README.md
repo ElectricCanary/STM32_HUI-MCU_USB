@@ -2,9 +2,7 @@
 
 This is a USB class compliant HUI/MCU interface for the STM32F411 "Blackpill".
 
-Under "Source" you'll find the core files that make the interface work.
 The .elf file allows to test on a board without having to compile the project yourself.
-Finally, the whole project can be unzipped and imported in STM32CubeIDE.
 
 You can use the functions in "protocol" for different action without worrying about the HUI/MCU differences. A simple function allows the interface to detect HUI or Mackie Control Universal on plug-in. All track names, VU Meters states, select, mute, solo are stocked in arrays.
 
